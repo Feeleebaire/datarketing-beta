@@ -1,0 +1,8 @@
+<%= simple_form_for(@campaign) do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name %>
+  <%= f.input :budget, as: :integer %>
+  <%= f.input :start_date, as: :datetime %>
+  <%= f.input :end_date, as: :datetime %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
